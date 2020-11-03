@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'TRULogining_Example' do
+  pod 'TRULogining', :path => '../'
+
+  target 'TRULogining_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
