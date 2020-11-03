@@ -7,7 +7,9 @@
 //
 
 #import "LZViewController.h"
-
+//#import ""
+#import "LZNetworking.h"
+#import "LZGoToLoginManager.h"
 @interface LZViewController ()
 
 @end
@@ -17,6 +19,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [LZNetworking runDoing];
+    [LZGoToLoginManager loginAction];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

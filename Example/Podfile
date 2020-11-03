@@ -4,7 +4,7 @@ platform :ios, '8.0'
 
 target 'TRULogining_Example' do
   pod 'TRULogining', :path => '../'
-
+  pod 'TRUNetworking', :path => '../../TRUNetworking'
   target 'TRULogining_Tests' do
     inherit! :search_paths
 

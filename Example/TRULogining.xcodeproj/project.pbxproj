@@ -40,7 +40,7 @@
 		25C8620284B742875F06C1E1 /* Pods-TRULogining_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRULogining_Example.release.xcconfig"; path = "Target Support Files/Pods-TRULogining_Example/Pods-TRULogining_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3F374FB176FA9A02AF1F114E /* Pods_TRULogining_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRULogining_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F412E4677CE9C219A0B1109 /* Pods_TRULogining_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRULogining_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5974BF83D1E09397E504DD72 /* TRULogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TRULogining.podspec; path = ../TRULogining.podspec; sourceTree = "<group>"; };
+		5974BF83D1E09397E504DD72 /* TRULogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TRULogining.podspec; path = ../TRULogining.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TRULogining_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRULogining_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,12 +61,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		720A5EC5DE8790074D58C521 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		720A5EC5DE8790074D58C521 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BF86E57494392A7DF6D5BAE /* Pods-TRULogining_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRULogining_Example.debug.xcconfig"; path = "Target Support Files/Pods-TRULogining_Example/Pods-TRULogining_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A85CB841741F21E4D00481BC /* Pods-TRULogining_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRULogining_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TRULogining_Tests/Pods-TRULogining_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E82CD6B39FF0CB7205A3F75B /* Pods-TRULogining_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRULogining_Tests.release.xcconfig"; path = "Target Support Files/Pods-TRULogining_Tests/Pods-TRULogining_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EA294C53313B02255A3DDB93 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EA294C53313B02255A3DDB93 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				A85CB841741F21E4D00481BC /* Pods-TRULogining_Tests.debug.xcconfig */,
 				E82CD6B39FF0CB7205A3F75B /* Pods-TRULogining_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -304,10 +304,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TRULogining_Example/Pods-TRULogining_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/TRULogining/TRULogining.framework",
+				"${BUILT_PRODUCTS_DIR}/TRUNetworking/TRUNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRULogining.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRUNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
